@@ -89,7 +89,7 @@ Contributions are welcome. To get started:
 4. **Make** your changes and commit with clear messages
 5. **Push** to your fork and open a **Pull Request**
 
-For an overview of the full monorepo structure and setup instructions, see the [swayrider/README.md](https://github.com/SwayRider/swayrider/blob/main/README.md).
+For an overview of the full project structure and setup instructions, see the [swayrider README](https://github.com/SwayRider/swayrider).
 
 ## Quick Start
 
