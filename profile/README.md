@@ -17,7 +17,9 @@ An open-source motorcycle routing platform built with Go microservices, featurin
 | Layer | Technology |
 |-------|------------|
 | Backend | Go 1.26, gRPC + Protocol Buffers |
+| API Gateway | Go — JWT validation, rate limiting, Redis Streams queue |
 | Database | PostgreSQL |
+| Queue | Redis Streams |
 | Routing Engine | Valhalla |
 | Geocoding | Pelias (Elasticsearch) |
 | Map Rendering | MapLibre with custom vector tiles |
@@ -32,7 +34,12 @@ An open-source motorcycle routing platform built with Go microservices, featurin
 │              Mobile Clients                      │
 │         Android (Compose)  ·  iOS (KMP)         │
 └───────────────────────┬─────────────────────────┘
-                        │ REST / gRPC
+                        │ HTTPS
+┌───────────────────────▼───────────────────────┐
+│           swayrider-api  (Gateway)              │
+│  JWT validation · Rate limiting · SSE queue     │
+└───────────────────────┬─────────────────────────┘
+                        │ gRPC
 ┌───────────────────────▼───────────────────────┐
 │            Backend Services (Go)                 │
 ├────────────┬──────────┬────────────────────────┤
@@ -56,6 +63,7 @@ An open-source motorcycle routing platform built with Go microservices, featurin
 | [protos](https://github.com/SwayRider/protos) | gRPC Protocol Buffer definitions |
 | [grpcclients](https://github.com/SwayRider/grpcclients) | Go gRPC client wrappers |
 | [swlib](https://github.com/SwayRider/swlib) | Go shared library (bootstrap, auth, logging) |
+| [swayrider-api](https://github.com/SwayRider/swayrider-api) | API gateway — JWT validation, rate limiting, SSE queue |
 | [authservice](https://github.com/SwayRider/authservice) | User authentication & JWT management |
 | [mailservice](https://github.com/SwayRider/mailservice) | Transactional email |
 | [regionservice](https://github.com/SwayRider/regionservice) | Geographic region queries |
