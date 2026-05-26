@@ -97,7 +97,10 @@ Contributions are welcome. To get started:
 4. **Make** your changes and commit with clear messages
 5. **Push** to your fork and open a **Pull Request**
 
-For an overview of the full project structure and setup instructions, see the [swayrider README](https://github.com/SwayRider/swayrider).
+For an overview of the full project structure and setup instructions, see the
+[swayrider README](https://github.com/SwayRider/swayrider/blob/main/README.md).
+For running services locally against the dev server, see the
+[Development Guide](https://github.com/SwayRider/swayrider/blob/main/DEVELOPMENT.md).
 
 ## Quick Start
 
@@ -114,6 +117,9 @@ cd protos && make
 # Build services
 go build ./...
 ```
+
+For running services locally against the dev server (WireGuard, environment setup, scenarios),
+see the [Development Guide](https://github.com/SwayRider/swayrider/blob/main/DEVELOPMENT.md).
 
 ### Mobile Development
 
