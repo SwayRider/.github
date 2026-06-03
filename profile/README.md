@@ -85,20 +85,11 @@ See [LICENSE](https://github.com/SwayRider/swayrider/blob/main/LICENSE) for deta
 
 Contributions are welcome. To get started:
 
-1. **Fork** the repository you want to work on
-2. **Clone** your fork locally:
-   ```bash
-   git clone git@github.com:YOUR_USERNAME/<repo>.git
-   ```
-3. **Create** a feature branch:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-4. **Make** your changes and commit with clear messages
-5. **Push** to your fork and open a **Pull Request**
+See [CONTRIBUTING](https://github.com/SwayRider/swayrider/blob/main/CONTRIBUTING.md) for details.
 
 For an overview of the full project structure and setup instructions, see the
 [swayrider README](https://github.com/SwayRider/swayrider/blob/main/README.md).
+
 For running services locally against the dev server, see the
 [Development Guide](https://github.com/SwayRider/swayrider/blob/main/DEVELOPMENT.md).
 
